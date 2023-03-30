@@ -1,0 +1,660 @@
+@font-face {
+	font-family: 'Wellington Medium';
+	src: url('font/TT-Wellingtons-Trial-Medium.ttf') format('ttf'),
+            url('font/TTWellingtons-Medium.woff') format('woff')
+}
+
+@font-face {
+	font-family: 'Wellington Bold';
+	src: url('font/TT-Wellingtons-Trial-Bold.ttf') format('ttf'),
+            url('font/TTWellingtons-Bold.woff') format('woff')
+}
+
+@font-face {
+	font-family: 'Wellington ExtraBold';
+	src: url('font/TT-Wellingtons-Trial-ExtraBold.ttf') format('ttf'),
+            url('font/TTWellingtons-ExtraBold.woff') format('woff')
+}
+
+@font-face {
+	font-family: 'Bestigia';
+	src: url('font/Bestigia-Regular.ttf') format('ttf'),
+}
+
+@font-face {
+	font-family: 'Laconick';
+	src: url('font/LACONICK.woff') format('woff'),
+}
+
+body{
+    margin: 0%;
+}
+
+/*------------------COLOR-----------------------*/
+
+
+.BKred{
+    background-color: #BB371A;
+}
+
+.BKyellow{
+    background-color: #eba83a;
+}
+
+.BKligth{
+    background-color: #fff8d9;
+}
+
+.BKblue{
+    background-color: #548687;
+}
+
+.BKblack{
+    background-color: #1f1300;
+}
+
+.red{
+    color :#BB371A;
+}
+
+.yellow{
+    color :#eba83a;
+}
+
+.ligth{
+    color :#fff8d9;
+}
+
+.blue{
+    color :#548687;
+}
+
+.black{
+    color :#1f1300;
+}
+
+.white{
+    color :#FFFFFF;
+}
+
+/*------------------FONT-----------------------*/
+
+.bold{
+    font-family: 'Wellington Bold' ;
+}
+
+.extrabold{
+    font-family: 'Wellington ExtraBold' ;
+}
+
+.medium{
+    font-family: 'Wellington Medium' ;
+}
+
+.best{
+    font-family: 'Bestigia';
+}
+/*------------------NAV-----------------------*/
+#btn-burger{
+    visibility: hidden;
+    right: 35px;
+    top:20px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: linear-gradient(
+      to bottom, 
+      #BB371A, #BB371A 20%, 
+      #548687 20%, #548687 40%, 
+      #BB371A 40%, #BB371A 60%, 
+      #548687 60%, #548687 80%, 
+      #BB371A 80%, #BB371A 100%
+    );
+}
+
+#burger{
+    visibility: hidden;
+    top: 0;
+    background-color: #548687;  
+    list-style-type: none;
+    width:150px;
+    text-align:left;
+    padding:20px 20px;
+    border-radius: 4%;
+    font-size: 13pt;
+    position: RELATIVE;
+    margin-left:-110px;
+    margin-top:45px;
+}
+
+#burger li{
+    padding:4px 0;
+}
+
+#logo{
+    width: 100px;
+    padding: 20px; 
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+    background-color:#548687 ;
+    font-family: 'Wellington Bold';
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.a-nav{
+    color: #FFFFFF;
+    padding:3%;
+}
+
+.a-nav:hover{
+    text-decoration: underline 2px;
+    text-decoration-color: #FFFFFF;
+}
+
+.a-nav:active{
+    opacity: 0.5;
+}
+
+
+#logo-nav{
+    color: #FFF8D9;
+    font-family: 'Laconick';
+    position:absolute;
+}
+
+header{
+    margin-top: 90px ;
+    height: 100%;
+}
+
+#arrow-down{
+    width: 50px;
+}
+
+#img-header{
+    width: 100%;
+}
+
+.button{
+    border-style: none;
+    border-radius: 5px;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: #FFF8D9;
+    font-family:'Wellington Bold' ;
+    height: 50px;
+}
+
+#btn-billeterie{
+    position: absolute;
+    right: 35px;
+    top:20px
+}
+#btn-billeterie:hover{
+    border: solid #FFF8D9 2px;
+}
+
+#block-nav{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+/*------------------PROGRA-----------------------*/
+
+#prog-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    margin-top: 50px;
+}
+
+#prog-titre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.img-acceuil{
+    width: 220px;
+    margin: 10px;
+}
+
+#img-acceuil-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.center{
+    text-align: center;
+}
+
+#axe-icon{
+    width: 10%;
+    height: 10%;
+}
+
+.marg{
+    margin-bottom: 50px;
+}
+.box-progra{
+    width: 250px;
+    height: 370px;
+    padding: 10px;
+}
+
+.progra-img{
+    width: 220px;
+}
+
+#activity-div{
+    gap: 30px;
+}
+#market-div{
+    gap: 30px;
+}
+#artist-div{
+    gap: 30px;
+}
+#comedy-div{
+    gap: 30px;
+}
+
+.pad{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.marg-bt{
+    margin-bottom: 0px;
+}
+
+.marg-auto{
+    display: block;
+    margin: auto;
+}
+
+#btn-tel-progra{
+    margin-bottom: 40px;
+}
+
+/*------------------BAMBINS-----------------------*/
+
+#bambins-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+#p-bambin-haut{
+    width: 40%;
+}
+
+#btn-progra:hover{
+    border: solid #bb371a 2px;
+}
+
+.block-sizing{
+    width: 155px;
+}
+
+.imgmarg{
+    margin: 20px;
+}
+
+#titre-bambin{
+    margin: 30px;
+    margin-top: 40px;
+}
+
+#castle-icon{
+    width: 30px;
+}
+
+/*------------------FESTIVAL-----------------------*/
+
+#titre-festival{
+    margin-top: 140px;
+}
+
+#img-festival-haut{
+    width: 100%;
+
+}
+
+#block-infos{
+    padding: 30px;
+    width: 50%;
+    border-radius: 5px;
+    margin: auto;
+}
+
+#btn-progra2:hover{
+    border: solid #bb371a 2px;
+}
+
+#btn-progra2{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#block-festival-bas{
+    margin-bottom: 20px;
+}
+
+#festival-img-2{
+    width: 350px;
+}
+
+#block-infos-2{
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 45%;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF8D9;
+}
+
+.a-footer:link{
+    text-decoration: none;
+    color: #FFF8D9;
+}
+
+.a-footer:hover{
+    text-decoration: underline 2px;
+    text-decoration-color: #FFF8D9;
+}
+
+/*---------------INFOS-------------*/
+#titre-infos{
+    margin-top: 150px;
+}
+
+.case-infos{
+    padding: 30px;
+    width: 50%;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+#case-info-size{
+    max-width:500px ;
+}
+
+#img-infos{
+    width: 400px;
+}
+
+iframe{
+    margin: 30px;
+}
+
+
+/*---------------CONTACT-------------*/
+#case-contact{
+    max-width: 380px;
+
+}
+/*---------------RESA-------------*/
+
+#text-resa{
+    width: 60%;
+}
+
+input{
+    border: 0px;
+    border-radius: 5px;
+    background-color: #fff8d9;
+    height: 25px;
+}
+
+.marg2{
+    margin-right: 30px;
+}
+
+#select{
+    display:grid;
+    grid-template-areas:"a b";
+    column-gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+#ad{
+    grid-area:a;
+}
+
+#en{
+    grid-area:b;
+}
+
+#btn-input{
+    display:block;
+    margin:auto;
+    margin-top:5%;
+}
+
+/*---------------FOOTER-------------*/
+
+footer {
+    background-color: #1F1300;
+    width : 100%;
+    height : 300px;
+    bottom : 0;
+    top :200px;
+    margin:0;
+    color:#FFF8D9;
+    font-family: 'TT Wellingtons Trl';
+}
+
+
+h2{
+    margin:0;
+    font-family: 'bestigia';
+}
+
+h1{
+    margin:0;
+    font-family: 'Laconick-NormalA';
+}
+
+#l1{
+    grid-template:
+    "a a b b"
+    "c c c c" ;
+    padding-top:4%;
+    width:70%;
+    height: 200px;
+    display:grid;
+    column-gap: 1%;
+    margin-left:auto;
+    margin-right:auto;
+    align-items: center;
+}
+
+#tf{
+    grid-area: a;
+}
+
+#tf h1{
+    font-size:32pt;
+    margin-bottom:2%;
+}
+
+#tf h2:last-child{
+    font-size:20pt;
+    text-align:left;
+    margin-left:20%;
+}
+
+#tf h2{
+    font-size:20pt;
+    margin-left:10%;
+}
+
+#rs{
+    font-size:18pt;
+    text-align: right;
+    margin-right:0;
+    grid-area: b;
+    color:#FFF8D9;  
+}
+
+#rs h2{
+    padding: 0 0.5%;
+    margin-bottom:4%;
+    margin-top:0;
+}
+
+#mentions{
+    grid-area:c;
+    width:100%;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 13pt;
+}
+
+#mentions span{
+    padding: 0 2%;
+}
+
+#mentions a{
+    text-decoration:none;
+}
+
+.icon{
+    padding:0 0.5%;
+}
+
+
+/*---------------RESPONSIVE-------------*/
+
+@media only screen and (max-width: 785px) {
+    
+    /*----------MENU----------*/
+
+    #block-nav{
+        display:none;
+    }
+
+    nav{
+        display:grid;
+        grid-template-areas: "a a b b c c";
+        padding:0 5%;
+        align-items: center;
+        column-gap: 20%;
+        width:100%;
+    }
+
+    #logo-nav{
+        grid-area: b;
+    
+    }
+
+    #logo{
+        width: 50px;
+    }
+    #btn-billeterie{
+        grid-area: a;
+        position:unset;
+    }
+
+
+    #btn-burger{
+        grid-area: c;
+        visibility: visible;
+        background-color: #BB371A;
+        top:20px;
+        width: 25px;
+    }
+
+
+    /*----------FOOTER----------*/
+    
+    #rs{
+      padding-bottom:8%;
+      grid-area:b;
+      text-align: center;
+      margin:0;
+    }
+    #tf{
+        padding-top: 10%;
+        padding-bottom:8%;
+        grid-area: a;
+        text-align: center;
+    }
+    #tf h1{
+        text-align: center;
+        margin-left:0;
+    }
+    #tf h2:last-child{
+        text-align:center;
+        margin:0;
+    }
+    #tf h2{
+        text-align:center;
+        margin:0;
+    }
+    #mentions{
+        grid-area:c;
+        padding-bottom:8%;
+    }
+    #l1{
+        text-align: center;
+        grid-template: 
+        "a"
+        "b"
+        "c";
+    }
+    #footer{
+        background-color: #1F1300;
+        height : 500px;
+    }
+}

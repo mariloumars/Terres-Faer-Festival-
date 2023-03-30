@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Terres Faer</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <a id="logo-nav" href="accueil.html" ><img src="img/Fichier 1Logo.svg" id="logo"></a>
+        
+        <div id="block-nav">
+            <a class="a-nav nav" href="festival.html">Le Festival</a>
+            <a class="a-nav nav" href="progra.html">Programmation</a>
+            <a class="a-nav nav" href="infos.html">Infos Pratiques</a>
+            <a class="a-nav nav" href="contact.html">Contact</a>
+        </div>
+
+        <button id="btn-burger">
+            <ul id="burger" class="medium">
+                <li><a class="a-nav" href="festival.html">Le Festival</a></li>
+                <li><a class="a-nav" href="progra.html">Programmation</a></li>
+                <li><a class="a-nav" href="infos.html">Infos Pratiques</a></li>
+                <li><a class="a-nav" href="contact.html">Contact</a></li>
+            </ul>
+        </button>
+
+        <button onclick="window.location.href = 'http://localhost/TerresFaer/resa.php';" class="BKred button" id="btn-billeterie">Réservation</button>
+   
+    </nav>
+
+    <header>
+        <img src="img/header.png" id="img-header">
+    </header>
+ 
+    <div id="prog-div"> 
+
+        <div class="best red" id="prog-titre">
+            <h1 class="best">Programmation</h1>
+            <img id="axe-icon" src="img/axe-icon.png">
+        </div>
+        <p class="medium center marg">Tout au long du week-end, parcourez les allées médiévales à la rencontre des conteurs, artisans, comédiens et musiciens !<br><br>
+
+        Voyagez dans le temps en profitant d’activités comme le lancer de hache ou le béhourd !<br><br>
+        
+        Assistez à une démonstration de béhourd et à l’élection du meilleur déguisement !</p>
+        <div class="marg" id="img-acceuil-block">
+            <img class="img-acceuil" src="img/photo-acceuil-1.png">
+            <img class="img-acceuil" src="img/photo-acceuil-2.png">
+            <img class="img-acceuil" src="img/photo-acceuil-3.png">
+            <img class="img-acceuil" src="img/photo-acceuil-4.png">
+        </div>
+
+        <button class="BKblue button" id="btn-progra" onclick="window.location.href = 'progra.html';">Voir plus</button>
+    </div>
+
+
+
+<div class="BKligth marg" id="bambins-block">
+    
+    <div class="flex" id="titre-icon-bambin">
+        <h1 class="best red" id="titre-bambin">Espace Bambins</h1>
+        <img id="castle-icon"src="img/chateau-noir.png">
+    </div>
+
+    <div class="flex wrap marg" id="bambin-haut">
+        <img class="imgmarg" id="img-bambin-haut" src="img/photo-bambins-1.png">
+        <p class="medium" id="p-bambin-haut">Réservé au moins de 12 ans, l’espace bambins est interdit aux adultes !<br>
+        Tu sera accueilli par une équipe agréée pour participer à des jeux et des activités pendant 1, 2 ou 4 heures !</p>
+    </div>
+        
+    <div class="flex wrap marg" id="bambin-bas">
+        
+        <div class="flex block-sizing-bambin">
+            <div class="flex wrap">
+                <img class="imgmarg img_bas_bambin" src="img/photo-bambins-2.png">
+                <p class="medium block-sizing">Participe à un grand tournoi pour des petits chevaliers !</p>
+            </div>
+        </div>
+
+        <div class="flex block-sizing-bambin">
+            <div class="flex wrap">
+                <img class="imgmarg img_bas_bambin" src="img/photo-bambins-3.png">
+                <p class="medium block-sizing">Atelier boissellerie pour fabriquer ta propre épée ou baguette magique !</p>
+            </div>
+        </div>
+        
+        <div class="flex block-sizing-bambin">
+            <div class="flex wrap">
+                <img class="imgmarg img_bas_bambin" src="img/photo-bambins-4.png">
+                <p class="medium block-sizing">Découvre d’anciens métiers et apprends la poterie, la broderie, la taille du bois ou de la pierre !</p>
+            </div>
+        </div>
+
+    </div> 
+</div>
+
+
+<footer>
+    <div id="footer">
+        <div id="l1">
+            <div id="tf">
+                <h1 class="ligth">Les terres Faer</h1>
+                <h2 class="yellow">17 et 18 Juin 2023,</h2>
+                <h2 class="yellow">Château de Josselin (54)</h2>
+            </div>
+            <div id="rs">
+                <h2>Suivez-nous</h2>
+                <span>
+                    <a href="https://www.facebook.com/profile.php?id=100091384120301"><img class="icon" src=img/fb.png></a>
+                    <a href="https://www.instagram.com/les_terres_faer/"><img class="icon" src=img/ig.png></a>
+                    <a href=#><img class="icon" src=img/tw.png></a>
+                    <a href="https://www.youtube.com/channel/UCwRu2kS2DJFmepKNQJ7Bw-Q"><img class="icon" src=img/yt.png></a>
+                </span>
+            </div>
+            <div id="mentions">
+                <a href="partenaire.html" class="a-footer"><span>Partenaires</span></a>
+                <a href="contact.html" class="a-footer"><span>Contact</span></a>
+                <a href="mentionlegale.html" class="a-footer"><span>Mentions légales</span></a>
+                <a href="politiquedeconf.html" class="a-footer"><span>Politique de confidentialité</span></a>
+            </div>
+        </div>
+    </div>
+</footer>       
+
+<script>
+    var burger = document.getElementById("burger");
+    burger.style.visibility='hidden'   
+    document.querySelector("#btn-burger").addEventListener('click', menu);
+    
+    function menu(){
+        if (burger.style.visibility!='visible'){
+            burger.style.visibility='visible'
+        } else {
+            burger.style.visibility='hidden'
+        }
+    };
+
+    var img = document.getElementById("img-header");
+    var src = "img/header.png"
+    var newsrc = "img/header-phone.png"
+    var widow = window.matchMedia("(max-width: 400px)")
+    
+
+    function headerchange(x) {
+            if (x.matches) {
+            img.setAttribute("src",newsrc)
+            }else{
+            img.setAttribute("src",src)
+            }
+        }
+
+    headerchange(widow)
+    widow.addListener(headerchange)
+   
+
+    
+</script>
+
+</body>
+</html>

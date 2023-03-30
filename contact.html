@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Terres Faer</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <a id="logo-nav" href="accueil.html"><img src="img/Fichier 1Logo.svg" id="logo"></a>
+        
+        <div id="block-nav">
+            <a class="a-nav nav" href="festival.html">Le Festival</a>
+            <a class="a-nav nav" href="progra.html">Programmation</a>
+            <a class="a-nav nav" href="infos.html">Infos Pratiques</a>
+            <a class="a-nav nav" href="contact.html">Contact</a>
+        </div>
+
+        <button id="btn-burger">
+            <ul id="burger" class="medium">
+                <li><a class="a-nav" href="festival.html">Le Festival</a></li>
+                <li><a class="a-nav" href="progra.html">Programmation</a></li>
+                <li><a class="a-nav" href="infos.html">Infos Pratiques</a></li>
+                <li><a class="a-nav" href="contact.html">Contact</a></li>
+            </ul>
+        </button>
+
+        <button onclick="window.location.href = 'resa.html';" class="BKred button" id="btn-billeterie">Réservation</button>
+   
+    </nav>
+
+    <h1 class="red best center marg" id="titre-festival">Contact</h1>
+
+    <div class="flex wrap">
+        <div class="BKligth flex-column wrap case-infos" id="case-contact">
+
+            <h3 class="bold black">Téléphone</h3>
+            <p class="medium black"> 02 97 22 36 4*</p>
+            <h3 class="bold black">Adresse mail</h3>
+            <a class="black medium" href="mailto:festivalterresfaer@gmail.com">festivalterresfaer@gmail.com</a>
+        </div>
+        <img src="img/photo-contact.png">
+    </div>
+
+    <div class="flex wrap marg">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2672.18071172432!2d-2.5495824848328894!3d47.952229479208995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480fce18828db933%3A0x57c3ef50d1494824!2sJosselin%20Castle!5e0!3m2!1sen!2sfr!4v1680008854070!5m2!1sen!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="flex-column wrap BKligth case-infos" id="case-contact">
+            <h2 class="yellow extrabold">Se rendre sur le site</h2>
+            <p class="medium">Le festival est situé à la Place de la Congrégation, 56120 Josselin en Loire Atlantique, à environ 50 km au nord de Vannes.
+            </p>
+        </div>
+        
+    </div>
+    
+    <footer>
+        <div id="footer">
+            <div id="l1">
+                <div id="tf">
+                    <h1 class="ligth">Les terres Faer</h1>
+                    <h2 class="yellow">17 et 18 Juin 2023,</h2>
+                    <h2 class="yellow">Château de Josselin (54)</h2>
+                </div>
+                <div id="rs">
+                    <h2>Suivez-nous</h2>
+                    <span>
+                        <a href=#><img class="icon" src=img/fb.png></a>
+                        <a href=#><img class="icon" src=img/ig.png></a>
+                        <a href=#><img class="icon" src=img/tw.png></a>
+                        <a href=#><img class="icon" src=img/yt.png></a>
+                    </span>
+                </div>
+                <div id="mentions">
+                    <a href="partenaire.html" class="a-footer"><span>Partenaires</span></a>
+                    <a href="contact.html" class="a-footer"><span>Contact</span></a>
+                    <a href="mentionlegale.html" class="a-footer"><span>Mentions légales</span></a>
+                    <a href="politiquedeconf.html" class="a-footer"><span>Politique de confidentialité</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        var burger = document.getElementById("burger");
+        burger.style.visibility='hidden'   
+        document.querySelector("#btn-burger").addEventListener('click', menu);
+        
+        function menu(){
+            if (burger.style.visibility!='visible'){
+                burger.style.visibility='visible'
+            } else {
+                burger.style.visibility='hidden'
+            }
+        };
+    </script>
+    
+</body>
+</html>
+    

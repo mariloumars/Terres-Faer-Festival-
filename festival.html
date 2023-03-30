@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Terres Faer</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <a id="logo-nav" href="accueil.html"><img src="img/Fichier 1Logo.svg" id="logo"></a>
+        
+        <div id="block-nav">
+            <a class="a-nav nav" href="festival.html">Le Festival</a>
+            <a class="a-nav nav" href="progra.html">Programmation</a>
+            <a class="a-nav nav" href="infos.html">Infos Pratiques</a>
+            <a class="a-nav nav" href="contact.html">Contact</a>
+        </div>
+
+        <button id="btn-burger">
+            <ul id="burger" class="medium">
+                <li><a class="a-nav" href="festival.html">Le Festival</a></li>
+                <li><a class="a-nav" href="progra.html">Programmation</a></li>
+                <li><a class="a-nav" href="infos.html">Infos Pratiques</a></li>
+                <li><a class="a-nav" href="contact.html">Contact</a></li>
+            </ul>
+        </button>
+
+        <button onclick="window.location.href = 'resa.html';"class="BKred button" id="btn-billeterie">Réservation</button>
+   
+    </nav>
+
+    <h1 class="red best center marg" id="titre-festival">Le Festival</h1>
+
+    <img class="marg" id="img-festival-haut" src="img/img-festival-1.png">
+
+    <div class="BKligth" id="block-infos">
+
+        <h2 class="blue extrabold">Par qui et pour qui ?</h2>
+        <p class="medium">C’est l’histoire de quatre ami  passionné d’histoire, et plus particulièrement de l’époque médiévale. Un jour ils ont décidé de partager cette passion et
+            de crée un rassemblement pour tous les passionné d’histoire et de la culture médiévale. Les Terres Faer était née ! ( D’ailleurs ça se prononce faère et
+            non pas faé )<br><br>
+            
+            En famille ou entre amis les Terres Faer est un festival ludique et culturelle. Outre les combats, vous trouverez sur  place des stands et des activités,,
+            ainsi que des concerts. Des activités pour vos bambins sont aussi proposé.<br><br> 
+            
+             Venez costumé ! C’est l’occasion idéale pour vous laisser porter et vivre comme au temps du moyen âge. </p>
+    </div>
+
+    <button class="BKyellow button" id="btn-progra2" onclick="window.location.href = 'progra.html';">Voir Programmation</button>
+
+    <div class="flex wrap" id="block-festival-bas">
+
+        <img id="festival-img-2" src="img/img-festival-2.png">
+
+        <div class="BKligth" id="block-infos-2">
+
+            <h2 class="blue extrabold">Nos engagements</h2>
+            <p class="medium">Le Festival des Terres Faer est un endroit de partage et de respect. Pas 
+                seulement le respect entre visiteurs mais aussi le respects des artistes
+                et des artisans ainsi que des lieus.<br><br> 
+                
+                Des poubelles sont à disposition sur le site, merci de jeter vos déchets 
+                afin de garder le lieu agréable et propre pour tous. <br><br> 
+                
+                Toutes l’équipe du festival est disponible si vous rencontrer le moindre 
+                soucis.</p>
+        </div>
+    
+    </div>
+    <div class="flex-column">
+    <h2 class="yellow extrabold marg">Vous souhaitez nous aider en devenant bénévole ?</h2>
+
+    <a class="marg" href="mailto:festivalterresfaer@gmail.com"><img src="img/Gmail_Logo_64px.png"></a>
+    
+    <p class="black bold center marg">Envoyer nous un mail à l’adresse suivante :<br>
+    festivalterresfaer@gmail.com</p>
+</div>
+
+<footer>
+    <div id="footer">
+        <div id="l1">
+            <div id="tf">
+                <h1 class="ligth">Les terres Faer</h1>
+                <h2 class="yellow">17 et 18 Juin 2023,</h2>
+                <h2 class="yellow">Château de Josselin (54)</h2>
+            </div>
+            <div id="rs">
+                <h2>Suivez-nous</h2>
+                <span>
+                    <a href=#><img class="icon" src=img/fb.png></a>
+                    <a href=#><img class="icon" src=img/ig.png></a>
+                    <a href=#><img class="icon" src=img/tw.png></a>
+                    <a href=#><img class="icon" src=img/yt.png></a>
+                </span>
+            </div>
+            <div id="mentions">
+                <a href="partenaire.html" class="a-footer"><span>Partenaires</span></a>
+                <a href="contact.html" class="a-footer"><span>Contact</span></a>
+                <a href="mentionlegale.html" class="a-footer"><span>Mentions légales</span></a>
+                <a href="politiquedeconf.html" class="a-footer"><span>Politique de confidentialité</span></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var burger = document.getElementById("burger");
+    burger.style.visibility='hidden'   
+    document.querySelector("#btn-burger").addEventListener('click', menu);
+    
+    function menu(){
+        if (burger.style.visibility!='visible'){
+            burger.style.visibility='visible'
+        } else {
+            burger.style.visibility='hidden'
+        }
+    };
+</script>
+
+</body>
+</html>

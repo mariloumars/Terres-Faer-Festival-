@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Terres Faer</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <a id="logo-nav"  href="accueil.html"><img src="img/Fichier 1Logo.svg" id="logo"></a>
+        
+        <div id="block-nav">
+            <a class="a-nav nav" href="festival.html">Le Festival</a>
+            <a class="a-nav nav" href="progra.html">Programmation</a>
+            <a class="a-nav nav" href="infos.html">Infos Pratiques</a>
+            <a class="a-nav nav" href="contact.html">Contact</a>
+        </div>
+
+        <button id="btn-burger">
+            <ul id="burger" class="medium">
+                <li><a class="a-nav" href="festival.html">Le Festival</a></li>
+                <li><a class="a-nav" href="progra.html">Programmation</a></li>
+                <li><a class="a-nav" href="infos.html">Infos Pratiques</a></li>
+                <li><a class="a-nav" href="contact.html">Contact</a></li>
+            </ul>
+        </button>
+
+        <button class="BKred button" id="btn-billeterie">Billetterie</button>
+   
+    </nav>
+    
+
+    <h1 class="red best center marg" id="titre-festival">Réservation</h1>
+
+    <div class="flex-column wrap">
+
+        <h2 class="yellow extrabold center marg">Pourquoi réserver ?</h2>
+        <p class="center marg black medium" id="text-resa">Chaque personne ayant réservé sa place se verra offrir une éco-cup du festival les Terres Faer. Vous pourrez récupérer votre cadeau à l'accueil du festival le jour J.<br><br>
+        De plus cela nous permet d'avoir un meilleur idée du nombre de personne venant au festival et ainsi de mieux nous préparer.  </p>
+    
+    </div>
+
+    <div class="flex-column wrap marg">
+
+        <form action="/ma-page-de-traitement" method="post" class="marg">
+
+            <div class="flex wrap" id="form1">
+                <div class="flex-column wrap marg2">        
+                    <div class="marg">
+                        <label class="medium"for="name">Nom <span class="red">*</span> :</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+                    <div class="marg">
+                        <label class="medium" for="name">Prénom <span class="red">*</span>:</label>
+                        <input type="text" id="surname" name="user_surname">
+                    </div>
+                </div>
+    
+                <div class="flex-column wrap">
+                    <div class="marg">
+                        <label class="medium" for="mail">E-mail <span class="red">*</span>:</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
+                    <div class="marg">
+                        <label class="medium" for="tel">Téléphone :</label>
+                        <input id="tel" name="user_tel"></input>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+        <button class="BKblue button extrabold light">Envoyer</button>
+    </div>
+
+
+    <footer>
+        <div id="footer">
+            <div id="l1">
+                <div id="tf">
+                    <h1 class="ligth">Les terres Faer</h1>
+                    <h2 class="yellow">17 et 18 Juin 2023,</h2>
+                    <h2 class="yellow">Château de Josselin (54)</h2>
+                </div>
+                <div id="rs">
+                    <h2>Suivez-nous</h2>
+                    <span>
+                        <a href=#><img class="icon" src=img/fb.png></a>
+                        <a href=#><img class="icon" src=img/ig.png></a>
+                        <a href=#><img class="icon" src=img/tw.png></a>
+                        <a href=#><img class="icon" src=img/yt.png></a>
+                    </span>
+                </div>
+                <div id="mentions">
+                    <a href="partenaire.html" class="a-footer"><span>Partenaires</span></a>
+                    <a href="contact.html" class="a-footer"><span>Contact</span></a>
+                    <a href="mentionlegale.html" class="a-footer"><span>Mentions légales</span></a>
+                    <a href="politiquedeconf.html" class="a-footer"><span>Politique de confidentialité</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    var burger = document.getElementById("burger");
+    burger.style.visibility='hidden'   
+    document.querySelector("#btn-burger").addEventListener('click', menu);
+    
+    function menu(){
+        if (burger.style.visibility!='visible'){
+            burger.style.visibility='visible'
+        } else {
+            burger.style.visibility='hidden'
+        }
+    };
+</script>
+
+</body>
+</html>
+    
