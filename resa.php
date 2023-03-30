@@ -49,28 +49,28 @@
 
     <div class="flex-column wrap marg">
 
-        <form action="resa.php" method="post" class="marg">
+        <form action="" method="get" class="marg">
 
             <div class="flex wrap" id="form1">
                 <div class="flex-column wrap marg2">        
                     <div class="marg">
                         <label class="medium"for="name">Nom <span class="red">*</span> :</label>
-                        <input type="text" id="name" name="user_name" placeholder="Entrer votre nom" value="Entrer votre nom"></input>
+                        <input type="text" id="name" name="user_name" value="" placeholder="Entrer votre nom" ></input>
                     </div>
                     <div class="marg">
                         <label class="medium" for="name">Prénom :</label>
-                        <input type="text" id="surname" name="user_surname" value="Entrer votre prénom" placeholder="Entrer votre prénom"></input>
+                        <input type="text" id="surname" name="user_surname" value="" placeholder="Entrer votre prénom"></input>
                     </div>
                 </div>
     
                 <div class="flex-column wrap">
                     <div class="marg">
                         <label class="medium" for="mail">E-mail <span class="red">*</span> :</label>
-                        <input type="email" id="mail" name="user_mail" value="Entrer votre adresse email" placeholder="Entrer votre adresse email"></input>
+                        <input type="email" id="mail" name="user_mail" value="" placeholder="Entrer votre adresse email"></input>
                     </div>
                     <div class="marg">
                         <label class="medium" for="tel">Téléphone :</label>
-                        <input id="tel" name="user_tel" value="Entrer votre numéro de téléphone" placeholder="Entrer votre numéro de téléphone"></input>
+                        <input id="tel" name="user_tel" value="" placeholder="Entrer votre numéro de téléphone"></input>
                     </div>
                 </div>
             </div>
@@ -102,17 +102,19 @@
                 </span>
             </div>
 
-            <input class="BKblue button extrabold light" id="btn-input" type="submit" value="Envoyer" name="send" style="display:block;margin:auto;margin-top:5%" ></input>
+            <button class="BKblue button extrabold light" id="btn-input" type="submit" name="send" style="display:block;margin:auto;margin-top:5%">
+                Envoyer
+            </button>
 
         </form>
 
         <?php
-            $nom = $_GET['user_name'];
-            $prenom = $_GET['user_surname'];
-            $mail = $_GET['user_mail'];
-            $tel = $_GET['user_tel'];
-            $adulte = $_GET['user_adulte'];
-            $enfant = $_GET['user_enfant'];
+            $nom = $_GET['user_name'] ?? null;
+            $prenom = $_GET['user_surname'] ?? null;
+            $mail = $_GET['user_mail'] ?? null;
+            $tel = $_GET['user_tel'] ?? null;
+            $adulte = $_GET['user_adulte'] ?? null;
+            $enfant = $_GET['user_enfant'] ?? null;
 
             $erreur=0;
 
