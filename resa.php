@@ -59,7 +59,7 @@
                     </div>
                     <div class="marg">
                         <label class="medium" for="name">Prénom :</label>
-                        <input type="text" id="surname" name="user_surname" value="" placeholder="Entrer votre prénom"></input>
+                        <input type="text" id="surname" name="user_surname" value="Entrer votre prénom" placeholder="Entrer votre prénom"></input>
                     </div>
                 </div>
     
@@ -70,7 +70,7 @@
                     </div>
                     <div class="marg">
                         <label class="medium" for="tel">Téléphone :</label>
-                        <input id="tel" name="user_tel" value="" placeholder="Entrer votre numéro de téléphone"></input>
+                        <input id="tel" name="user_tel" value="Entrer votre numéro de téléphone" placeholder="Entrer votre numéro de téléphone"></input>
                     </div>
                 </div>
             </div>
@@ -106,8 +106,7 @@
 
         </form>
 
-        <?PHP
-
+        <?php
             $nom = $_GET['user_name'];
             $prenom = $_GET['user_surname'];
             $mail = $_GET['user_mail'];
@@ -115,29 +114,27 @@
             $adulte = $_GET['user_adulte'];
             $enfant = $_GET['user_enfant'];
 
-            $erreurNom=0;
-            $erreurMail=0;
-            $erreurAdulte=0;
-            $erreurEnfant=0;
-
+            $erreur=0;
 
             if ($nom=="Entrer votre nom"){
+                $erreur++;
                 echo"<h3>Veuillez renseigner votre nom</h3>";
             }
             if ($mail=="Entrer votre adresse email"){
+                $erreur++;
                 echo"<h3>Veuillez renseigner votre adresse mail</h3>";
             }
             if ($adulte=="a"){
+                $erreur++;
                 echo"<h3>Veuillez renseigner le nombre d'adultes</h3>";
             }
             if ($enfant=="e"){
+                $erreur ++;
                 echo"<h3>Veuillez renseigner le nombre d'enfants</h3>";
             }
-
-            if($erreurNom==0 && $erreurMail==0 && $erreurAdulte==0 && $erreurEnfant==0){
-                addData($nom, $prenom, $mail, $tel, $adulte, $enfant);  
+            if ($erreur==0){
+                addData($nom, $prenom, $mail, $tel, $adulte, $enfant); 
             }
-            
         ?>
 
     </div>
